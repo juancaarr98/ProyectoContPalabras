@@ -13,12 +13,13 @@ import java.util.Scanner;
         System.out.println("Dime cual es la palabra/frase que deseas analizar:");
         Scanner teclado= new Scanner(System.in);
         palabra=teclado.nextLine();
+        //Solo usamos un objeto ya que la herencia hace que este, pueda tener los metodos de ambas clases.
         CMostrar x=new CMostrar(palabra);
-        
+        //Metodos de CContar.
         x.contarCaracteresTotal();
         x.contarNumeroPalabras();
         x.contarTodosCaracteres();
-        //mostrar
+        //Metodos de CMostrar
         System.out.println(x.textoCaracteresTotal());
         System.out.println(x.textoNumeroPalabras());
         System.out.println(x.textoTodosCaracteres());
