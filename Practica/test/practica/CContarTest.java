@@ -28,6 +28,7 @@ public class CContarTest {
       a[2]=1;
       a[3]=1;
       
+      
       assertTrue(c1.contarCaracteresTotal()==4);
       assertFalse(c1.contarCaracteresTotal()!=4);
       
